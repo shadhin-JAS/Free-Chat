@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#039BE5"
+        >
+        <ImageView
+            android:id="@+id/logIV"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/topbar"
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+            />
+        <TextView
+            android:id="@+id/UserTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User List"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@id/logIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/topbar"
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+            android:fontFamily="@font/abyssinica_sil"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/searchIV"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="23dp"
+            android:src="@drawable/baseline_content_paste_search_24"
+            app:layout_constraintEnd_toStartOf="@id/profileIV"
+            app:layout_constraintTop_toTopOf="@id/topbar"
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+
+            />
+        <ImageView
+            android:id="@+id/profileIV"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_account_circle_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/topbar"
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/topbar"
+           tools:listitem="@layout/user_item"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4554B1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+      <TextView
+          android:id="@+id/homeTV"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Home"
+          android:textSize="33sp"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          />
+        <TextView
+            android:id="@+id/TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="profile"
+            android:textSize="33sp"
+            android:layout_marginLeft="76dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/homeTV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/bTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

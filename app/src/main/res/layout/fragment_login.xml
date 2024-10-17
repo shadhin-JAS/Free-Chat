@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ACC1"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginHorizontal="85dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/EmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="12dp"
+        android:fontFamily="@font/abyssinica_sil"
+        android:layout_marginTop="22dp"
+        android:textSize="22sp"
+        android:background="@drawable/edit_bg"
+        android:backgroundTint="#FBF7F7"
+        />
+    <EditText
+        android:id="@+id/passwordId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="12dp"
+        android:fontFamily="@font/abyssinica_sil"
+        android:background="@drawable/edit_bg"
+        android:backgroundTint="#FBF7F7"
+        android:textSize="22sp"
+       />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="#FAF8F8"
+        android:background="@drawable/edit_bg"
+        android:backgroundTint="#0C477A"
+        android:fontFamily="@font/abyssinica_sil"
+        android:textSize="22sp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="39dp"
+        />
+
+
+    <TextView
+        android:id="@+id/forgetId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abyssinica_sil"
+        android:text="Forget password"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textSize="22sp"
+        android:textColor="#853333"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+
+        />
+    <TextView
+        android:id="@+id/createId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abyssinica_sil"
+        android:text="Create New Account"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>

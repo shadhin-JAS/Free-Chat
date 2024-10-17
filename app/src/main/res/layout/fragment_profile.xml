@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#D27AEA"
+    android:layout_height="match_parent"
+    tools:context=".profileFragment">
+
+    <ImageView
+        android:id="@+id/proIV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pic"
+
+        />
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Md shadhin Ahmed"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/gmailtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="shadhinahmed@gmail.com"
+        android:layout_marginTop="11dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/biotv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello I am Shadhin ,This is my first app"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        />
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lat's Chat"
+        android:layout_marginTop="23dp"
+        />
+
+
+</LinearLayout>

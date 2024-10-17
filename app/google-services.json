@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218073075975",
+    "project_id": "free-chat-1504b",
+    "storage_bucket": "free-chat-1504b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218073075975:android:c999495308b4c6e4cdb5a2",
+        "android_client_info": {
+          "package_name": "com.cscomer.freechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtujd2ctw9YL7_1LVh_Q9vUSzG_B_kypY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
